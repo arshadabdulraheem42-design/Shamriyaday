@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="skyGrad9" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#4a1532" />
+      <stop offset="60%" stop-color="#24081c" />
+      <stop offset="100%" stop-color="#10020c" />
+    </radialGradient>
+    <linearGradient id="goldGrad9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd79a" />
+      <stop offset="50%" stop-color="#e6b980" />
+      <stop offset="100%" stop-color="#e8607f" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGrad9)" />
+  <!-- Sparkles -->
+  <g fill="#ffd79a" opacity="0.6">
+    <circle cx="160" cy="90" r="1.5"/><circle cx="280" cy="180" r="2"/><circle cx="650" cy="110" r="2.2"/>
+    <circle cx="680" cy="240" r="1.5"/><circle cx="210" cy="310" r="1.8"/><circle cx="580" cy="330" r="1.5"/>
+  </g>
+  <!-- Radiant Ring -->
+  <circle cx="400" cy="270" r="130" fill="none" stroke="#e6b980" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="6 4"/>
+  <!-- Elegant "18" Milestone Emblem -->
+  <text x="400" y="300" font-family="'Playfair Display', Georgia, serif" font-size="110" font-weight="700" fill="url(#goldGrad9)" text-anchor="middle" filter="drop-shadow(0 0 20px rgba(230,185,128,0.4))">
+    18
+  </text>
+  <text x="400" y="340" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" letter-spacing="6" fill="#ff9eb5" text-anchor="middle">
+    CHAPTER EIGHTEEN
+  </text>
+  <text x="400" y="520" font-family="'Cormorant Garamond', serif" font-size="24" fill="#ffd599" text-anchor="middle" font-style="italic">Stepping into adulthood with grace and radiance</text>
+</svg>

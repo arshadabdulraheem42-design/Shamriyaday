@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="nightSky" cx="50%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#241033" />
+      <stop offset="50%" stop-color="#14081e" />
+      <stop offset="100%" stop-color="#08020d" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#nightSky)" />
+  <!-- Crescent Moon -->
+  <path d="M400 130 A60 60 0 0 0 460 210 A50 50 0 1 1 400 130" fill="#ffd79a"/>
+  <!-- Phone glow / speech bubbles -->
+  <g fill="#ffd79a" opacity="0.6">
+    <circle cx="150" cy="100" r="1.5"/><circle cx="230" cy="180" r="2"/><circle cx="650" cy="90" r="1.8"/>
+    <circle cx="600" cy="220" r="1.5"/><circle cx="320" cy="80" r="1.2"/><circle cx="680" cy="290" r="2.2"/>
+  </g>
+  <!-- Window frame silhouette -->
+  <rect x="250" y="260" width="300" height="230" rx="12" fill="none" stroke="#e6b980" stroke-width="2" opacity="0.4"/>
+  <line x1="400" y1="260" x2="400" y2="490" stroke="#e6b980" stroke-width="2" opacity="0.4"/>
+  <line x1="250" y1="360" x2="550" y2="360" stroke="#e6b980" stroke-width="2" opacity="0.4"/>
+  <!-- Glowing stars constellation -->
+  <path d="M300 310 L340 330 L380 300 L420 320" stroke="#ff8da3" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <text x="400" y="550" font-family="'Cormorant Garamond', serif" font-size="24" fill="#ffd599" text-anchor="middle" font-style="italic">Talking until the clock struck 3 AM</text>
+</svg>

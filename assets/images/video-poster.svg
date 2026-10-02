@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="vGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#461430" />
+      <stop offset="60%" stop-color="#24081c" />
+      <stop offset="100%" stop-color="#0f010a" />
+    </radialGradient>
+    <linearGradient id="vPlayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9eb5" />
+      <stop offset="100%" stop-color="#e6b980" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#vGrad)" />
+  <!-- Frame border like a vintage film reel -->
+  <rect x="30" y="30" width="740" height="540" rx="12" fill="none" stroke="#e6b980" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Film reel perforations -->
+  <g fill="#e6b980" opacity="0.3">
+    <rect x="50" y="45" width="20" height="14" rx="2"/>
+    <rect x="90" y="45" width="20" height="14" rx="2"/>
+    <rect x="130" y="45" width="20" height="14" rx="2"/>
+    <rect x="650" y="45" width="20" height="14" rx="2"/>
+    <rect x="690" y="45" width="20" height="14" rx="2"/>
+    <rect x="730" y="45" width="20" height="14" rx="2"/>
+    <rect x="50" y="540" width="20" height="14" rx="2"/>
+    <rect x="90" y="540" width="20" height="14" rx="2"/>
+    <rect x="130" y="540" width="20" height="14" rx="2"/>
+    <rect x="650" y="540" width="20" height="14" rx="2"/>
+    <rect x="690" y="540" width="20" height="14" rx="2"/>
+    <rect x="730" y="540" width="20" height="14" rx="2"/>
+  </g>
+  <!-- Play button circle and triangle -->
+  <g transform="translate(400, 280)">
+    <circle cx="0" cy="0" r="55" fill="#2d0a20" stroke="url(#vPlayGrad)" stroke-width="3" opacity="0.95"/>
+    <polygon points="-12,-20 22,0 -12,20" fill="url(#vPlayGrad)"/>
+  </g>
+  <text x="400" y="400" font-family="'Playfair Display', Georgia, serif" font-size="28" fill="#e6b980" text-anchor="middle">A Candid Little Video</text>
+  <text x="400" y="440" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-style="italic" fill="#ffb4c4" text-anchor="middle">Tap to play your clip</text>
+</svg>

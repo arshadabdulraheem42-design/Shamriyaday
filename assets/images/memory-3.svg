@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sunsetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d0e28" />
+      <stop offset="45%" stop-color="#802a4e" />
+      <stop offset="70%" stop-color="#d97554" />
+      <stop offset="85%" stop-color="#ffd599" />
+      <stop offset="100%" stop-color="#240718" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sunsetGrad)" />
+  <!-- Sun -->
+  <circle cx="400" cy="380" r="70" fill="#ffeac2" opacity="0.9" filter="blur(4px)"/>
+  <!-- Sea waves -->
+  <path d="M0 430 Q200 420 400 430 T800 425 L800 600 L0 600 Z" fill="#29071c" opacity="0.9"/>
+  <path d="M0 460 Q200 455 400 460 T800 455 L800 600 L0 600 Z" fill="#180311" />
+  <!-- Couple holding hands silhouette -->
+  <g fill="#0e010a" transform="translate(400, 390)">
+    <!-- Person 1 -->
+    <circle cx="-16" cy="-28" r="9"/>
+    <path d="M-26 -16 C-26 -18 -10 -18 -6 -16 L-4 22 L-14 22 L-14 42 L-20 42 L-20 22 L-26 22 Z"/>
+    <!-- Person 2 -->
+    <circle cx="16" cy="-24" r="8"/>
+    <path d="M6 -13 C6 -15 22 -15 26 -13 L26 24 L18 24 L18 42 L12 42 L12 24 L6 24 Z"/>
+    <!-- Hands joined -->
+    <path d="M-10 -2 Q0 8 10 -2" stroke="#0e010a" stroke-width="3" fill="none"/>
+  </g>
+  <text x="400" y="550" font-family="'Cormorant Garamond', serif" font-size="24" fill="#ffd599" text-anchor="middle" font-style="italic">Watching the golden hour in your eyes</text>
+</svg>

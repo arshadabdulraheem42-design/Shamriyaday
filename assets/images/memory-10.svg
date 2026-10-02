@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="sparkleGrad10" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#551838" />
+      <stop offset="60%" stop-color="#28091d" />
+      <stop offset="100%" stop-color="#12020e" />
+    </radialGradient>
+    <linearGradient id="roseAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9eb5" />
+      <stop offset="50%" stop-color="#e8607f" />
+      <stop offset="100%" stop-color="#ffd79a" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sparkleGrad10)" />
+  <!-- Sparkler starburst effect -->
+  <g transform="translate(400, 260)">
+    <circle cx="0" cy="0" r="85" fill="#e8607f" opacity="0.15" filter="blur(16px)"/>
+    <!-- Sparkler light bursts -->
+    <line x1="0" y1="-70" x2="0" y2="70" stroke="#ffd79a" stroke-width="2" opacity="0.8"/>
+    <line x1="-70" y1="0" x2="70" y2="0" stroke="#ffd79a" stroke-width="2" opacity="0.8"/>
+    <line x1="-50" y1="-50" x2="50" y2="50" stroke="#ff9eb5" stroke-width="1.8" opacity="0.7"/>
+    <line x1="-50" y1="50" x2="50" y2="-50" stroke="#ff9eb5" stroke-width="1.8" opacity="0.7"/>
+    <circle cx="0" cy="0" r="14" fill="#ffffff" filter="drop-shadow(0 0 10px #ffd79a)"/>
+  </g>
+  <!-- Floating celebration hearts -->
+  <g fill="url(#roseAmber)" opacity="0.75">
+    <path d="M260 190 C250 180 240 180 235 186 A7 7 0 0 0 235 196 L248 208 L261 196 A7 7 0 0 0 261 186 C256 180 246 180 248 190 Z" transform="scale(1.4)"/>
+    <path d="M520 220 C510 210 500 210 495 216 A7 7 0 0 0 495 226 L508 238 L521 226 A7 7 0 0 0 521 216 C516 210 506 210 508 220 Z" transform="scale(1.2)"/>
+  </g>
+  <text x="400" y="520" font-family="'Cormorant Garamond', serif" font-size="24" fill="#ffd599" text-anchor="middle" font-style="italic">Every shared laugh is a spark of pure joy</text>
+</svg>

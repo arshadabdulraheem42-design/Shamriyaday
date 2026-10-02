@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="roseG8" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#541b36" />
+      <stop offset="60%" stop-color="#2c0a1f" />
+      <stop offset="100%" stop-color="#14020f" />
+    </radialGradient>
+    <linearGradient id="roseG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9eb5" />
+      <stop offset="50%" stop-color="#e8607f" />
+      <stop offset="100%" stop-color="#e6b980" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#roseG8)" />
+  <!-- Swirling romantic heart particles -->
+  <g transform="translate(400, 270) scale(1.4)">
+    <path d="M0 32 C-28 10 -42 -8 -42 -24 A22 22 0 0 1 0 -12 A22 22 0 0 1 42 -24 C42 -8 28 10 0 32 Z" fill="url(#roseG)"/>
+  </g>
+  <!-- Floating petals -->
+  <g fill="#ff7b95" opacity="0.6">
+    <ellipse cx="280" cy="180" rx="14" ry="7" transform="rotate(25 280 180)"/>
+    <ellipse cx="520" cy="200" rx="16" ry="8" transform="rotate(-35 520 200)"/>
+    <ellipse cx="230" cy="340" rx="12" ry="6" transform="rotate(50 230 340)"/>
+    <ellipse cx="550" cy="360" rx="15" ry="7" transform="rotate(-15 550 360)"/>
+    <ellipse cx="370" cy="400" rx="13" ry="6" transform="rotate(70 370 400)"/>
+    <ellipse cx="440" cy="410" rx="11" ry="5" transform="rotate(-60 440 410)"/>
+  </g>
+  <text x="400" y="520" font-family="'Cormorant Garamond', serif" font-size="24" fill="#ffd599" text-anchor="middle" font-style="italic">Every day with you is my favourite day</text>
+</svg>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Happy 18th Birthday, Ponnummaa | A Gift For You</title>
+  <meta name="description" content="A special cinematic 18th birthday journey for Shamriya Sherin (Ponnummaa), crafted with all my love.">
+  <meta name="theme-color" content="#10020c">
+
+  <!-- Open Graph Meta Tags (Social Media & Link Preview Cards) -->
+  <meta property="og:title" content="Happy 18th Birthday, Ponnummaa ❤️">
+  <meta property="og:description" content="A romantic, cinematic journey through our most cherished memories.">
+  <meta property="og:image" content="assets/images/og-cover.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Happy Birthday, Ponnummaa ❤️">
+  <meta name="twitter:description" content="A romantic, cinematic journey through our most cherished memories.">
+  <meta name="twitter:image" content="assets/images/og-cover.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Ambient & Celebration Canvas Layers -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- Light Bloom Transition Overlay -->
+  <div id="lightBloom" aria-hidden="true"></div>
+
+  <!-- Top Progress Bar & Floating Indicator -->
+  <div class="progress-track" aria-hidden="true">
+    <div class="progress-fill" id="progressBar"></div>
+  </div>
+
+  <header class="top-nav">
+    <span class="scene-indicator" id="sceneIndicator" aria-live="polite"></span>
+    <button id="audioToggle" class="audio-toggle-btn" aria-label="Toggle romantic music" type="button" title="Romantic Music">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+      </svg>
+    </button>
+  </header>
+
+  <div id="app">
+    <!-- Main Scenes Container -->
+    <main id="scenesContainer">
+
+      <!-- 1. INVITATION SCENE -->
+      <section id="scene-invitation" class="scene active" aria-label="Birthday Invitation">
+        <div class="scene-inner">
+          <p class="invitation-teaser" id="invitationTeaser">A quiet moment, just for you...</p>
+
+          <button id="startJourneyBtn" class="heartbeat-btn" type="button" aria-label="Touch my heart to begin our birthday journey">
+            <span class="pulse-ring" aria-hidden="true"></span>
+            <svg class="heartbeat-svg" viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="heartGradBtn" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff9eb5" />
+                  <stop offset="50%" stop-color="#e8607f" />
+                  <stop offset="100%" stop-color="#e6b980" />
+                </linearGradient>
+              </defs>
+              <path d="M32 54 C16 40 6 28 6 18 A13 13 0 0 1 32 12 A13 13 0 0 1 58 18 C58 28 48 40 32 54 Z" fill="url(#heartGradBtn)" />
+            </svg>
+          </button>
+
+          <h1 class="invitation-prompt" id="invitationPrompt">Touch my heart to begin</h1>
+          <p class="invitation-hint" id="invitationHint">Best experienced with sound on 🎧</p>
+        </div>
+      </section>
+
+      <!-- 2. TITLE SCENE -->
+      <section id="scene-title" class="scene" aria-label="Happy Birthday Ponnummaa" aria-hidden="true">
+        <div class="scene-inner">
+          <p class="title-greeting" id="titleGreeting">Happy Birthday</p>
+          <h2 class="title-petname" id="titlePetName">Ponnummaa</h2>
+          <p class="title-fullname" id="titleFullName">SHAMRIYA SHERIN</p>
+
+          <div class="title-dob-badge" id="titleDobBadge">
+            <span class="dob-sparkle" aria-hidden="true">✦</span>
+            <span class="dob-date">October 3, 2008</span>
+            <span class="dob-sep" aria-hidden="true">•</span>
+            <span class="dob-milestone">Chapter 18</span>
+            <span class="dob-sparkle" aria-hidden="true">✦</span>
+          </div>
+
+          <div class="ornate-divider" aria-hidden="true">
+            <span class="ornate-line"></span>
+            <span class="ornate-diamond"></span>
+            <span class="ornate-line"></span>
+          </div>
+
+          <p class="title-tagline" id="titleTagline">To the girl who turned every ordinary day into pure poetry.</p>
+        </div>
+      </section>
+
+      <!-- 3. TIME TOGETHER COUNTER -->
+      <section id="scene-counter" class="scene" aria-label="Our Time Together" aria-hidden="true">
+        <div class="scene-inner">
+          <h2 class="section-title" id="counterTitle">Every Second by Your Side</h2>
+          <p class="section-subtitle" id="counterSubtitle">Counting every heartbeat, laugh, and quiet miracle we've shared:</p>
+
+          <div class="counter-grid" aria-live="off">
+            <div class="arch-card">
+              <span class="counter-num" id="countYears">0</span>
+              <span class="counter-unit">Years</span>
+            </div>
+            <div class="arch-card">
+              <span class="counter-num" id="countMonths">0</span>
+              <span class="counter-unit">Months</span>
+            </div>
+            <div class="arch-card">
+              <span class="counter-num" id="countDays">0</span>
+              <span class="counter-unit">Days</span>
+            </div>
+            <div class="arch-card">
+              <span class="counter-num" id="countHours">00</span>
+              <span class="counter-unit">Hours</span>
+            </div>
+            <div class="arch-card">
+              <span class="counter-num" id="countMinutes">00</span>
+              <span class="counter-unit">Mins</span>
+            </div>
+            <div class="arch-card">
+              <span class="counter-num" id="countSeconds">00</span>
+              <span class="counter-unit">Secs</span>
+            </div>
+          </div>
+
+          <p class="counter-date-label" id="counterDateLabel">Since the day our journey began</p>
+        </div>
+      </section>
+
+      <!-- 3. OUR STORY (MEMORIES POLAROID) -->
+      <section id="scene-story" class="scene" aria-label="Our Story Memories" aria-hidden="true">
+        <div class="scene-inner">
+          <div class="story-wrapper">
+            <div class="memory-header-info">
+              <span class="memory-counter-badge" id="memoryCounterBadge">Memory 1 of 8</span>
+              <span class="memory-date-tag" id="memoryDateTag">Date</span>
+            </div>
+
+            <!-- Polaroid Photo / Video Card -->
+            <article class="polaroid-frame">
+              <div class="polaroid-media-container" id="polaroidMedia">
+                <!-- Injected via JavaScript -->
+              </div>
+              <div class="polaroid-caption-area">
+                <h3 class="polaroid-title" id="polaroidTitle">Memory Title</h3>
+                <p class="polaroid-caption" id="polaroidCaption">Memory caption text...</p>
+              </div>
+            </article>
+
+            <!-- Memory Sub-controls -->
+            <div class="memory-nav-controls">
+              <button class="memory-sub-btn" id="memoryPrevBtn" type="button" aria-label="Previous memory">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <button class="memory-sub-btn" id="memoryNextBtn" type="button" aria-label="Next memory">
+                <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. GALLERY WALL -->
+      <section id="scene-gallery" class="scene" aria-label="Photo Gallery" aria-hidden="true">
+        <div class="scene-inner">
+          <h2 class="section-title">Gallery of Us</h2>
+          <p class="section-subtitle">A collection of moments that stole my heart. Tap any photo to expand.</p>
+
+          <div class="gallery-grid" id="galleryGrid">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. HER CHILDHOOD MEMORIES -->
+      <section id="scene-childhood" class="scene" aria-label="Her Childhood Memories" aria-hidden="true">
+        <div class="scene-inner">
+          <div class="childhood-badge" id="childhoodBadge">✦ Before Our Paths Crossed • 2008 & Beyond ✦</div>
+          <h2 class="section-title" id="childhoodTitle">Little Ponnummaa</h2>
+          <p class="section-subtitle" id="childhoodSubtitle">Three precious snapshots from the sweetest beginnings — before you became my entire world.</p>
+
+          <!-- 3-Photo Visible Grid: All 3 photos visible at once! -->
+          <div class="childhood-grid" id="childhoodGrid">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. REASONS I LOVE YOU (3D FLIP CARDS) -->
+      <section id="scene-reasons" class="scene" aria-label="Reasons Why I Love You" aria-hidden="true">
+        <div class="scene-inner">
+          <h2 class="section-title">Reasons I Adore You</h2>
+          <p class="section-subtitle">Just a few of the infinite reasons my heart beats for you. Tap each card to uncover.</p>
+
+          <div class="reasons-grid" id="reasonsGrid">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. THE LOVE LETTER -->
+      <section id="scene-letter" class="scene" aria-label="Love Letter" aria-hidden="true">
+        <div class="scene-inner">
+          <h2 class="section-title">From My Heart to Yours</h2>
+          <p class="section-subtitle" style="margin-bottom: var(--space-lg);">A love letter for your special day</p>
+
+          <article class="letter-card">
+            <div class="letter-stationery-header" aria-hidden="true">
+              <span class="letter-stationery-tag">Chapter 18 Milestone</span>
+              <span class="letter-stationery-date">October 3, 2008</span>
+            </div>
+            <h3 class="letter-salutation" id="letterSalutation">My Dearest Ponnummaa,</h3>
+            <div class="letter-body" id="letterBody">
+              <!-- Typewritten via JavaScript -->
+            </div>
+            <div class="letter-signoff-box">
+              <p class="letter-closing" id="letterClosing">Forever and always,</p>
+              <p class="letter-signature" id="letterSignature">Yours Always</p>
+            </div>
+          </article>
+
+          <button id="letterSkipBtn" class="letter-skip-btn" type="button">Skip to End ⚡</button>
+        </div>
+      </section>
+
+      <!-- 8. MEMORY LANE RECAP (HIGHLIGHT REEL) -->
+      <section id="scene-recap" class="scene" aria-label="Highlight Reel" aria-hidden="true">
+        <div class="scene-inner">
+          <h2 class="section-title" id="recapTitle">A Glimpse Along Memory Lane</h2>
+          <p class="section-subtitle" id="recapSubtitle">Just a few of the million moments that made me fall for you...</p>
+
+          <div class="recap-container">
+            <div class="recap-progress-bar-container" id="recapProgressBar"></div>
+            <div class="recap-viewport" id="recapViewport">
+              <!-- Slides injected via JavaScript -->
+            </div>
+            <div class="recap-overlay-caption" id="recapCaption"></div>
+          </div>
+
+          <button id="recapSkipBtn" class="recap-skip-btn" type="button">Skip to Birthday Wish ➔</button>
+        </div>
+      </section>
+
+      <!-- 9. MAKE A WISH (CAKE & CANDLES) -->
+      <section id="scene-wish" class="scene" aria-label="Make a Birthday Wish" aria-hidden="true">
+        <div class="scene-inner">
+          <h2 class="section-title" id="wishTitle">Close Your Eyes & Make a Wish</h2>
+          <p class="section-subtitle" id="wishInstruction">Take a deep breath, make the sweetest wish in your heart, and blow out the candles.</p>
+
+          <!-- SVG Birthday Cake with Animated Candle Flames -->
+          <div class="cake-container" aria-hidden="true">
+            <svg class="cake-svg" viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <!-- Flame Gradient -->
+                <radialGradient id="flameGrad" cx="50%" cy="80%" r="70%">
+                  <stop offset="0%" stop-color="#ffffff" />
+                  <stop offset="30%" stop-color="#ffe168" />
+                  <stop offset="70%" stop-color="#ff7b25" />
+                  <stop offset="100%" stop-color="#d32f2f" stop-opacity="0.8" />
+                </radialGradient>
+                <!-- Cake Tier Gradients -->
+                <linearGradient id="plateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#e6b980" />
+                  <stop offset="100%" stop-color="#9a7044" />
+                </linearGradient>
+                <linearGradient id="cakeBottom" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#5a1839" />
+                  <stop offset="100%" stop-color="#360a20" />
+                </linearGradient>
+                <linearGradient id="cakeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8607f" />
+                  <stop offset="100%" stop-color="#9d2948" />
+                </linearGradient>
+                <linearGradient id="frosting" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#fff5ee" />
+                  <stop offset="100%" stop-color="#edd5cb" />
+                </linearGradient>
+              </defs>
+
+              <!-- Cake Plate -->
+              <ellipse cx="150" cy="235" rx="125" ry="18" fill="url(#plateGrad)" />
+              <ellipse cx="150" cy="232" rx="115" ry="14" fill="#2d0a1e" opacity="0.4" />
+
+              <!-- Bottom Tier -->
+              <path d="M50 170 C50 170 50 215 50 215 C50 230 150 230 250 215 C250 215 250 170 250 170 Z" fill="url(#cakeBottom)" />
+              <ellipse cx="150" cy="170" rx="100" ry="18" fill="#6d1e46" />
+              <!-- Bottom Tier Frosting Drips -->
+              <path d="M50 170 Q75 195 100 175 Q125 198 150 172 Q175 196 200 175 Q225 195 250 170" fill="none" stroke="url(#frosting)" stroke-width="8" stroke-linecap="round"/>
+
+              <!-- Top Tier -->
+              <path d="M85 115 C85 115 85 160 85 160 C85 174 150 174 215 160 C215 160 215 115 215 115 Z" fill="url(#cakeTop)" />
+              <ellipse cx="150" cy="115" rx="65" ry="14" fill="#ff8ea7" />
+              <!-- Top Tier Frosting Drips -->
+              <path d="M85 115 Q115 135 150 118 Q185 135 215 115" fill="none" stroke="url(#frosting)" stroke-width="6" stroke-linecap="round"/>
+
+              <!-- Sugar Pearls -->
+              <circle cx="100" cy="116" r="3" fill="#ffe2b0"/>
+              <circle cx="125" cy="120" r="3" fill="#ffe2b0"/>
+              <circle cx="150" cy="122" r="3.5" fill="#ffe2b0"/>
+              <circle cx="175" cy="120" r="3" fill="#ffe2b0"/>
+              <circle cx="200" cy="116" r="3" fill="#ffe2b0"/>
+
+              <!-- Candle 1 (Left) -->
+              <g class="candle-group">
+                <rect x="110" y="65" width="8" height="42" rx="2" fill="#fff5ee" stroke="#e6b980" stroke-width="1"/>
+                <path d="M110 75 L118 78 M110 88 L118 91" stroke="#e8607f" stroke-width="1.5"/>
+                <line x1="114" y1="65" x2="114" y2="56" stroke="#24091a" stroke-width="2"/>
+                <!-- Flame 1 -->
+                <path class="flame" d="M114 36 C107 46 109 54 114 56 C119 54 121 46 114 36 Z" fill="url(#flameGrad)" />
+              </g>
+
+              <!-- Candle 2 (Center - slightly taller) -->
+              <g class="candle-group">
+                <rect x="146" y="55" width="8" height="52" rx="2" fill="#fff5ee" stroke="#e6b980" stroke-width="1"/>
+                <path d="M146 68 L154 71 M146 82 L154 85 M146 95 L154 98" stroke="#e8607f" stroke-width="1.5"/>
+                <line x1="150" y1="55" x2="150" y2="46" stroke="#24091a" stroke-width="2"/>
+                <!-- Flame 2 -->
+                <path class="flame" d="M150 26 C143 36 145 44 150 46 C155 44 157 36 150 26 Z" fill="url(#flameGrad)" style="animation-delay: -0.4s;"/>
+              </g>
+
+              <!-- Candle 3 (Right) -->
+              <g class="candle-group">
+                <rect x="182" y="65" width="8" height="42" rx="2" fill="#fff5ee" stroke="#e6b980" stroke-width="1"/>
+                <path d="M182 75 L190 78 M182 88 L190 91" stroke="#e8607f" stroke-width="1.5"/>
+                <line x1="186" y1="65" x2="186" y2="56" stroke="#24091a" stroke-width="2"/>
+                <!-- Flame 3 -->
+                <path class="flame" d="M186 36 C179 46 181 54 186 56 C191 54 193 46 186 36 Z" fill="url(#flameGrad)" style="animation-delay: -0.8s;"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="wish-actions">
+            <button id="blowCakeBtn" class="blow-cake-btn" type="button">Blow Out The Candles 🎂</button>
+            <span id="micStatusPill" class="mic-status-pill" style="display: none;"></span>
+          </div>
+
+          <div class="wish-success-box" id="wishSuccessBox" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- 10. FINALE -->
+      <section id="scene-finale" class="scene" aria-label="Finale" aria-hidden="true">
+        <div class="scene-inner">
+          <svg class="finale-heart-motif" viewBox="0 0 64 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="finHeart" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff9eb5" />
+                <stop offset="50%" stop-color="#e8607f" />
+                <stop offset="100%" stop-color="#e6b980" />
+              </linearGradient>
+            </defs>
+            <path d="M32 54 C16 40 6 28 6 18 A13 13 0 0 1 32 12 A13 13 0 0 1 58 18 C58 28 48 40 32 54 Z" fill="url(#finHeart)" />
+          </svg>
+
+          <h2 class="finale-love-text" id="finaleLoveText">I Love You, Ponnummaa</h2>
+          <p class="finale-closing" id="finaleClosing">Happiest 18th Birthday, Shamriya Sherin. Stepping into this magical Chapter 18 as the sweetest, most precious soul in my universe. Thank you for blessing my life with your gentle smile, your warmth, and a love that feels like home. Here is to our past, our present, and the forever waiting for us.</p>
+          <p class="finale-sender" id="finaleSender">Yours Always & Forever</p>
+
+          <button id="replayBtn" class="replay-btn" type="button">Replay Our Story ↺</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Floating Swipe Navigation -->
+  <nav class="swipe-nav" id="bottomNav" aria-label="Scene Navigation">
+    <button class="swipe-nav-btn swipe-nav-prev" id="prevBtn" type="button" aria-label="Swipe left for previous page" title="Swipe left for previous page">
+      <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      <span class="swipe-btn-text">Swipe Left</span>
+    </button>
+    <div class="swipe-hint-pill" id="swipeHintPill" role="button" tabindex="0" aria-label="Swipe to turn page">
+      <span class="swipe-hint-icon swipe-arrow-pulse-left" aria-hidden="true">‹</span>
+      <span class="swipe-hint-text" id="swipeHintText">Swipe right to continue</span>
+      <span class="swipe-hint-icon swipe-arrow-pulse" aria-hidden="true">›</span>
+    </div>
+    <button class="swipe-nav-btn swipe-nav-next" id="nextBtn" type="button" aria-label="Swipe right for next page" title="Swipe right for next page">
+      <span class="swipe-btn-text">Swipe Right</span>
+      <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+  </nav>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Full-screen photo view">
+    <button id="lightboxCloseBtn" class="lightbox-close-btn" type="button" aria-label="Close photo view">&times;</button>
+    <button id="lightboxPrevBtn" class="lightbox-nav-btn lightbox-prev" type="button" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <div class="lightbox-content-box">
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Expanded memory view">
+      <video id="lightboxVideo" class="lightbox-video" controls playsinline style="display: none;"></video>
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+    <button id="lightboxNextBtn" class="lightbox-nav-btn lightbox-next" type="button" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+  </div>
+
+  <!-- JavaScript Modules in Strict Dependency Order -->
+  <script src="js/config.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

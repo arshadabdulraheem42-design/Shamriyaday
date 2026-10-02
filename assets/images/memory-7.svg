@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="cozyGrad" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#4e1b34" />
+      <stop offset="50%" stop-color="#2a0a1e" />
+      <stop offset="100%" stop-color="#12020d" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#cozyGrad)" />
+  <!-- Fairy lights garland -->
+  <path d="M100 120 Q250 180 400 130 T700 150" fill="none" stroke="#683446" stroke-width="2"/>
+  <circle cx="150" cy="140" r="7" fill="#ffd79a" filter="blur(1px)"/>
+  <circle cx="230" cy="165" r="7" fill="#ff9eb5" filter="blur(1px)"/>
+  <circle cx="310" cy="160" r="7" fill="#ffd79a" filter="blur(1px)"/>
+  <circle cx="390" cy="132" r="7" fill="#ff9eb5" filter="blur(1px)"/>
+  <circle cx="470" cy="140" r="7" fill="#ffd79a" filter="blur(1px)"/>
+  <circle cx="550" cy="155" r="7" fill="#ff9eb5" filter="blur(1px)"/>
+  <circle cx="630" cy="148" r="7" fill="#ffd79a" filter="blur(1px)"/>
+  <!-- Candle with warm flame -->
+  <rect x="380" y="320" width="40" height="70" rx="4" fill="#fff5ee" opacity="0.85"/>
+  <ellipse cx="400" cy="320" rx="20" ry="6" fill="#f0d5c8"/>
+  <line x1="400" y1="320" x2="400" y2="305" stroke="#401824" stroke-width="2"/>
+  <path d="M400 280 Q410 295 400 305 Q390 295 400 280 Z" fill="#ffd79a"/>
+  <circle cx="400" cy="295" r="30" fill="#ffd79a" opacity="0.3" filter="blur(8px)"/>
+  <text x="400" y="520" font-family="'Cormorant Garamond', serif" font-size="24" fill="#ffd599" text-anchor="middle" font-style="italic">Soft laughter, warm tea, perfect peace</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="grad2" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#5a223e" />
+      <stop offset="60%" stop-color="#2d0d21" />
+      <stop offset="100%" stop-color="#14030f" />
+    </radialGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd599" />
+      <stop offset="100%" stop-color="#e8607f" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad2)" />
+  <!-- Cafe table / cups silhouette -->
+  <circle cx="400" cy="240" r="140" fill="#e8607f" opacity="0.12" />
+  <!-- Coffee Cups steam forming a heart -->
+  <path d="M370 230 Q360 190 385 165 Q400 150 400 140 Q400 150 415 165 Q440 190 430 230" fill="none" stroke="#ffd599" stroke-width="2.5" opacity="0.8" stroke-dasharray="4 3"/>
+  <ellipse cx="400" cy="280" rx="90" ry="24" fill="#200617" stroke="#e6b980" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Cups -->
+  <path d="M340 260 L350 310 Q355 330 380 330 L385 330 Q410 330 415 310 L425 260 Z" fill="#381026" stroke="#ffd599" stroke-width="1.5"/>
+  <path d="M425 275 Q440 275 440 290 Q440 305 423 305" fill="none" stroke="#ffd599" stroke-width="1.5"/>
+  <!-- Heart icon -->
+  <g transform="translate(400, 390)">
+    <path d="M0 16 C-14 4 -22 -4 -22 -13 A10 10 0 0 1 0 -6 A10 10 0 0 1 22 -13 C22 -4 14 4 0 16 Z" fill="url(#warm)"/>
+  </g>
+  <text x="400" y="470" font-family="'Cormorant Garamond', serif" font-size="24" fill="#e6b980" text-anchor="middle" font-style="italic">Hours felt like minutes with you</text>
+</svg>
