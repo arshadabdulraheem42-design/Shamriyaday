@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A cinematic romantic birthday website for Ponnummaa (Shamriya Sherin)",
   "scripts": {
+    "build": "echo 'Static build ready'",
     "dev": "node server.js",
     "start": "node server.js",
     "serve": "node server.js"
